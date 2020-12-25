@@ -1,0 +1,269 @@
+h1 {
+    text-align: center;
+    color: royalblue;
+}
+
+.Greeting {
+    color: rgb(78, 3, 252);
+}
+
+#italic {
+    color: royalblue;
+}
+
+nav {
+    background: aquamarine;
+    text-align: center;
+}
+
+.container {
+    border: 10px dotted chocolate;
+    margin: 50px 5px 25px 2px;
+    padding: 30px 10px 30px 7px;
+}
+
+.box {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background: rgb(00, 0, 255);
+    margin: 10px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes getSmaller {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(.25);
+    }
+    75% {
+        transform: scale(0.12);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes changeColors {
+    0% {
+        background-color: orchid;
+    }
+    10% {
+        background-color: midnightblue;
+    }
+    20% {
+        background-color: rgb(65, 235, 184);
+    }
+    30% {
+        background-color: lime;
+    }
+    40% {
+        background-color: paleturquoise;
+    }
+    50% {
+        background-color: magenta;
+    }
+    60% {
+        background-color: red;
+    }
+    70% {
+        background-color: goldenrod;
+    }
+    80% {
+        background-color: green;
+    }
+    90% {
+        background-color: darkkhaki;
+    }
+    100% {
+        background-color: mediumseagreen;
+    }
+}
+
+@keyframes moveBox {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 100px;
+        top: 0px;
+    }
+    50% {
+        left: 100px;
+        top: 200px;
+    }
+    75% {
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+#box6 {
+    top: 100px;
+    left: 200px;
+    position: relative;
+}
+
+html {
+    background-color: beige;
+}
+
+#box5 {
+    position: relative;
+    animation: moveBox 8s infinite;
+    background-color: aqua
+}
+
+#box4 {
+    animation: changeColors 5.5s infinite forwards;
+}
+
+#box3 {
+    animation: getSmaller 6s infinite ease-out;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: ease-in-out;
+    border-radius: 23%;
+    background-image: radial-gradient(circle, red, blue, orange, purple, lime, pink, red);
+}
+
+#box1 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-image: linear-gradient(orange, white, lime);
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 34px;
+}
+
+.circle-img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 8px 8px 8px 10px rgb(143, 142, 146);
+}
+
+.flex {
+    border: 3px solid rgb(10, 10, 10);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form input,
+textarea,
+button {
+    display: block;
+    margin: 30px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20%);
+    grid-template-rows: repeat(3, [row] auto);
+    background-color: #fff;
+    color: #444;
+}
+
+.Box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index: 10;
+}
+
+.a {
+    grid-column: col / span 2;
+    grid-row: row;
+}
+
+.b {
+    grid-column: col 3 / span 3;
+    grid-row: row;
+}
+
+.c {
+    grid-column: col;
+    grid-row: row 2;
+}
+
+.d {
+    grid-column: col 2 / span 3;
+    grid-row: row 2;
+}
+
+.e {
+    grid-column: col / span 5;
+    grid-row: row 3;
+}
+
+.f {
+    grid-column: col 3 / span 3;
+    grid-row: row 2;
+    background-color: rgba(49, 121, 207, 0.5);
+    z-index: 20;
+}
